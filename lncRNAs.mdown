@@ -1,0 +1,16 @@
+Studying
+========
+Long non-coding RNAs (lncRNAs)
+------------------------------
+lncRNAs are one of those things that I just have to Google almost every time I come across them. After this post I plan to never have that problem again!
+
+### The Basics ###
+lncRNAs are exactly what they sound like: RNAs that are longer than 200 nucleotides, that don't code for proteins.
+
+#### Where are they in the genome? ####
+====|==|========|==|==========|==|=====
+Pretend this is your genome. Each |==| is a focus of transcription. Inbetween each of those is **intragenic space**, where lncRNAs are located and transcribed.
+
+#### How are lncRNAs conserved? ####
+* They're generally not very well conserved, which could possibly mean they're not functional, or evolutionarily important.
+* It is possible that only short regions of lncRNAs are conserved, if those regions are constrained by structure- or sequence-specific interactions*************

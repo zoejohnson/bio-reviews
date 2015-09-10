@@ -1,20 +1,17 @@
 The First One
 =============
-Deep Sequencing Identifies Ethnicity-Specific Bacterial Signatures in the Oral Microbiome
+[Deep Sequencing Identifies Ethnicity-Specific Bacterial Signatures in the Oral Microbiome](http://journals.plos.org/ploscollections/article?id=10.1371/journal.pone.0077287)
 -----------------------------------------------------------------------------------------
 ### What They Did: A Brief Overview ###
 * This study looked at 192 individuals in 4 distinct ethnic groups (48 individuals per group): African-
   American, Caucasian, Latino, and Chinese.  
-* For each individual, they looked at 3 oral biofilms: supragingival (above the gum line, like 
-  plaque), saliva, and subgingival (below the gum line).
-* They compared the microbes in these environments and found that subgingival and salivary samples 
-  showed the most ethnicity-specific clustering. (ie, the subgingival microbes are more similar *within* 
-  each ethnic group than they are *across* ethnic groups.)
-* They looked at taxonomy to see how diverse and how numerous the subgingival microbes were in each 
+* For each individual, they looked at 3 oral biofilms: supragingival (above the gum line, like plaque), saliva, and subgingival (below the gum line).
+* They compared the microbes in these environments and found that subgingival and salivary samples showed the most ethnicity-specific clustering. (ie, the subgingival microbes are more similar *within* each ethnic group than they are *across* ethnic groups.)
+* They looked at taxonomy to see how diverse and how numerous the subgingival microbes were in each
   ethnic group. African-Americans had the fewest species (least diversity) and least equitability (some of the species were present in much higher numbers than others; "numerically dominant", in the article).
-* They compared the subgingival microbes across all individuals and found that there is a "core" microbiome 
+* They compared the subgingival microbes across all individuals and found that there is a "core" microbiome
   shared by most of the subjects.
-* They were able to predict a subject's ethnicity based on their subgingival microbial signature. (Fairly 
+* They were able to predict a subject's ethnicity based on their subgingival microbial signature. (Fairly
   accurately... well, better than the chance 25%.)
 
 **TL;DR:** they found that subgingival microbes are ethnicity-specific. Cool. But why?
@@ -28,28 +25,27 @@ I'm not really familiar with a lot of their methods and software, so I really ha
 
 * *192 individuals in 4 distinct ethnic groups*  
 * *3 oral biofilms: supragingival* (they scraped some plaque)*, saliva* (had subjects drool into a tube)*, and subgingival* (inserted [flexible sticks](http://www.tulsadentalspecialties.com/Libraries/Endo_Obturation_Images/WaveOne_Paper_Gutta_Points_R.sflb.ashx "endodontic paperpoints") way under the gums. yep.) DNA was isolated with Quigen MiniAmp kits.
-	* They chose these three regions because they form a kind of scale of influence. The supragingival 
-microbes would be affected by the *environment* of the individual: what they eat, if they floss, etc. The subgingival microbes are affected by the *genes* of the individual: their tooth structure, for example. Saliva, being fluid, is in contact with both supra- and subgingival colonies, and is predicted to show properties of both.
-* *Compared the microbes in these environments; found that subgingival and salivary samples 
-  showed the most ethnicity-specific clustering.*
+	* They chose these three regions because they form a kind of scale of influence. The supragingival microbes would be affected by the *environment* of the individual: what they eat, if they floss, etc. The subgingival microbes are affected by the *genes* of the individual: their tooth structure, for example. Saliva, being fluid, is in contact with both supra- and subgingival colonies, and is predicted to show properties of both.
+* *Compared the microbes in these environments; found that subgingival and salivary samples showed the most ethnicity-specific clustering.*
 	* **Comparison of Microbial Signatures Using [t-RFLP](https://en.wikipedia.org/wiki/Terminal_restriction_fragment_length_polymorphism "Your bff Wikipedia")**: terminal Resriction Fragment Length Polymorphism is a way to profile a microbial community.
 		* First, they amplified 16S rRNA genes using fluorescent-labeled primers.*(22 cycles of PCR- see their [Methods](http://journals.plos.org/ploscollections/article?id=10.1371/journal.pone.0077287#s4 "Methods") for more)* Then they restriction digested them.
 		* This gave them a bunch of *terminal* fragments of varying lengths, depending on the species.
 		* Because they used fluorescent primers, they were able to visualize peaks at each terminal-- the signal is amplified (more area under the peak) depending on how many of each species there are. Each species has its own peak.
-		* **They Used [NMDS](https://en.wikipedia.org/wiki/Multidimensional_scaling "Just keep Wikipedia open") to visually cluster the microbial communities**: non-metric Multidimensional Scaling relates the communities to each other, rating how similar (or dissimilar) they are to each other and graphing it. (What I'm assuming is they compared the 16S rRNA sequences to numerically determine the % similarity threshold. ex: AAAT vs AAAG = 0.25. Ya feel me?)
+		* **They used [NMDS](https://en.wikipedia.org/wiki/Multidimensional_scaling "Just keep Wikipedia open") to visually cluster the microbial communities**: non-metric Multidimensional Scaling relates the communities to each other, rating how similar (or dissimilar) they are to each other and graphing it. (What I'm assuming is they compared the 16S rRNA sequences to numerically determine the % similarity threshold. ex: AAAT vs AAAG = 0.25. Ya feel me?)
+    * If you're interested-- a really awesome resource for learning nMDR in R was [this blog post](http://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/) by Jon Lefcheck.
 		* Look at Figure 1! You'll see pretty good clustering in the subgingival graph, okay clustering in the saliva graph, and just total chaos in the supragingival graph.
 	* **They only moved on because they found the hint they were looking for: ethnicity-specific clustering.**
 	* The rest of the experiment is done on subgingival microbial communities, since those showed clustering.
 * *Taxonomy, to see how diverse/numerous the subgingival microbes were in each ethnic group.*
-  	* **16S Pyrotag Sequencing:** In a subset of 100 people, they sequenced variable regions V1-V3 and V7-V9 of the bacterial 16S rRNA (these regions act as a kind of bar code for the various species), and found ~400 species, in 77 genera. 
+  	* **16S Pyrotag Sequencing:** In a subset of 100 people, they sequenced variable regions V1-V3 and V7-V9 of the bacterial 16S rRNA (these regions act as a kind of bar code for the various species), and found ~400 species, in 77 genera.
   	* Using the [Shannon Index](https://en.wikipedia.org/wiki/Diversity_index#Shannon_index "Wiki, for the math geeks"), they determined the Diversity and Equitability (whether species are present equally, or certain species are significantly more abundant) for each ethnicity.  African-Americans had the lowest Diversity and the lowest Equitability, which I believe means it's easier to predict which microbes came from Af-Ams.
-* *They compared the subgingival microbes across all individuals and found that there is a "core" microbiome 
+* *They compared the subgingival microbes across all individuals and found that there is a "core" microbiome
   shared by most of the subjects.*
-  	* Still using the subset of 100 ppl! 8 species (2%) were found in all individuals, 8% were found in 90 people, and over 33% were found in half of the subset. [Figure 3]. 
+  	* Still using the subset of 100 ppl! 8 species (2%) were found in all individuals, 8% were found in 90 people, and over 33% were found in half of the subset. [Figure 3].
 * *They were able to predict a subject's ethnicity based on their subgingival microbial signature.*
-	* [Random Forest machine-learning classifier](http://www.quora.com/Random-Forests/How-do-random-forests-work-in-laymans-terms "Really great Quora answer in laymen's terms!"). I had no clue what this was, and I'm still not SUPER clear. It sounds like the 'random forest' was trained to develop an algorithm that guesses which ethnicity was being represented by a given microbial sample. The paper talks a bit about sensitivity and specificity; I didn't know the difference until I did some digging online. 
-		* **Sensitivity** refers to the proportion of *true positives*, as in the Random Forest predicted the correct ethnicity based on the microbial community. 
-		* **Specificity** refers to the proportion of *true negatives*, meaning the RF correctly predicted that the microbial community *wouldn't* be associated with a certain ethnicity. 
+	* [Random Forest machine-learning classifier](http://www.quora.com/Random-Forests/How-do-random-forests-work-in-laymans-terms "Really great Quora answer in laymen's terms!"). I had no clue what this was, and I'm still not SUPER clear. It sounds like the 'random forest' was trained to develop an algorithm that guesses which ethnicity was being represented by a given microbial sample. The paper talks a bit about sensitivity and specificity; I didn't know the difference until I did some digging online.
+		* **Sensitivity** refers to the proportion of *true positives*, as in the Random Forest predicted the correct ethnicity based on the microbial community.
+		* **Specificity** refers to the proportion of *true negatives*, meaning the RF correctly predicted that the microbial community *wouldn't* be associated with a certain ethnicity.
 		* With this in mind, go back and check out Figure 5!
 	* They were able to differentiate the microbial communities fairly accurately. Blacks and Whites displayed the most divergence, and because Blacks and Whites have shared certain environmental factors for several generations, they suggeted that the host genotype plays a bigger role on the microbial community than the environment. *"'Nature' appears to win over 'nurture.'"*
 
