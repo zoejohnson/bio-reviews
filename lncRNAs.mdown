@@ -5,12 +5,39 @@ Long non-coding RNAs (lncRNAs)
 lncRNAs are one of those things that I just have to Google almost every time I come across them. After this post I plan to never have that problem again!
 
 ### The Basics ###
-lncRNAs are exactly what they sound like: RNAs that are longer than 200 nucleotides, that don't code for proteins.
+lncRNAs are exactly what they sound like: RNAs that are longer than 200 nucleotides, that do not get translated into proteins.
 
-#### Where are they in the genome? ####
+#### What do they do? ####
+* lncRNAs can regulate gene expression by affecting RNA transcription:
+  * May act as upstream activators or repressors for downstream mRNAs (I guess this is before they're transcribed?)
+  * Acting as co-regulators, or affecting co-regulators (ex: Evf-2, co-activator for a TF that plays a significant role in forebrain development/neurogenesis)
+  * Recruiting TFs
+  * Modifying TF activity
+* lncRNAs can regulate gene expression by affecting transcription mechanisms:
+  * RNA Polymerase II
+
+
+#### Where are they? ####
+* In the **cell**, lncRNAs usually stay in the nucleus. (mRNAs are usually transported to the cytoplasm)
+* In the **genome**:
 ====|==|========|==|==========|==|=====
 Pretend this is your genome. Each |==| is a focus of transcription. Inbetween each of those is **intragenic space**, where lncRNAs are located and transcribed.
 
 #### How are lncRNAs conserved? ####
 * They're generally not very well conserved, which could possibly mean they're not functional, or evolutionarily important.
 * It is possible that only short regions of lncRNAs are conserved, if those regions are constrained by structure- or sequence-specific interactions*************
+
+#### Other types of non-coding RNAs ####
+* **MicroRNAs** (miRNAs) complement mRNA strands, preventing translation or tagging them for degredation. (Gene silencing)
+* **RibosomalRNAs** make up ribosomes (convert mRNAs to proteins)
+* **TransferRNAs** (tRNAs) link codons to their respective AAs
+* **small nucleolar RNAs** (snoRNAs)
+* **small nuclear RNA** (snRNA): Regulation of TFs and RNA Poly II
+*
+
+#### How do we study them? ####
+* Sequencing cDNA libraries
+* Next-Gen Sequencing on transcriptome
+* [lncRNA Database](http://www.lncrnadb.org)
+
+* My fave resource so far: [This CSHL Talk](https://www.youtube.com/watch?v=P3X4ujzRxc4&index=2&list=PLaydtP4O97rPS9arOlBjTgCaYijdi47t5)
