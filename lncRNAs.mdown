@@ -2,10 +2,10 @@ Studying
 ========
 Long non-coding RNAs (lncRNAs)
 ------------------------------
-lncRNAs are one of those things that I just have to Google almost every time I come across them. After this post I plan to never have that problem again!
-
 ### The Basics ###
-lncRNAs are exactly what they sound like: RNAs that are longer than 200 nucleotides, that do not get translated into proteins.
+lncRNAs are one of those things that are really frustrating to look up, because we don't know that much about them. The information you want is not readily available, but you don't have time to read a bunch of publications. Hopefully this post will clear a few things up.
+
+What Google will tell you: lncRNAs are RNAs that are longer than 200 nucleotides, that do *not* get translated into proteins. But Google's definition leaves you with a bunch of unanswered questions...
 
 #### What do they do? ####
 * lncRNAs can regulate gene expression by affecting RNA transcription:
@@ -15,13 +15,16 @@ lncRNAs are exactly what they sound like: RNAs that are longer than 200 nucleoti
   * Modifying TF activity
 * lncRNAs can regulate gene expression by affecting transcription mechanisms:
   * RNA Polymerase II
+* Interact with chromatin regulatory complexes:
+  *
 
 
 #### Where are they? ####
 * In the **cell**, lncRNAs usually stay in the nucleus. (mRNAs are usually transported to the cytoplasm)
 * In the **genome**:
 ====|==|========|==|==========|==|=====
-Pretend this is your genome. Each |==| is a focus of transcription. Inbetween each of those is **intragenic space**, where lncRNAs are located and transcribed.
+
+  Pretend this is your genome. Each |==| is a focus of transcription. Inbetween each of those is **intragenic space**, where lncRNAs are located and transcribed.
 
 #### How are lncRNAs conserved? ####
 * They're generally not very well conserved, which could possibly mean they're not functional, or evolutionarily important.
