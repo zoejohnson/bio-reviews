@@ -3,7 +3,7 @@ Studying
 Long non-coding RNAs (lncRNAs)
 ------------------------------
 ### The Basics ###
-lncRNAs are one of those things that are really frustrating to look up, because we don't know that much about them. The information you want is not readily available, but you don't have time to read a bunch of publications. Hopefully this post will clear a few things up.
+lncRNAs are one of those things that are really frustrating to look up, because we don't know that much about them. The information you want is not readily available, and you don't have time to read a bunch of publications. Hopefully this post will clear a few things up.
 
 What Google will tell you: lncRNAs are RNAs that are longer than 200 nucleotides, that do *not* get translated into proteins. But Google's definition leaves you with a bunch of unanswered questions...
 
@@ -16,7 +16,9 @@ What Google will tell you: lncRNAs are RNAs that are longer than 200 nucleotides
 * lncRNAs can regulate gene expression by affecting transcription mechanisms:
   * RNA Polymerase II
 * Interact with chromatin regulatory complexes:
-  *
+  * ex: **Xist**, the ncRNA responsible for X-inactivation, probably interacts with the nearest sites on the X chromosome.
+  * Xist exploits 3D architecture to spread across the chromosome-- learn how this was discovered in [this CSHL Talk](https://www.youtube.com/watch?v=P3X4ujzRxc4&index=2&list=PLaydtP4O97rPS9arOlBjTgCaYijdi47t5)
+  * lncRNAs might change chromosome structure (by recruiting a chromatin modifier) to access the entire chromosome in every cell.
 
 
 #### Where are they? ####
@@ -30,17 +32,16 @@ What Google will tell you: lncRNAs are RNAs that are longer than 200 nucleotides
 * They're generally not very well conserved, which could possibly mean they're not functional, or evolutionarily important.
 * It is possible that only short regions of lncRNAs are conserved, if those regions are constrained by structure- or sequence-specific interactions*************
 
-#### Other types of non-coding RNAs ####
-* **MicroRNAs** (miRNAs) complement mRNA strands, preventing translation or tagging them for degredation. (Gene silencing)
-* **RibosomalRNAs** make up ribosomes (convert mRNAs to proteins)
-* **TransferRNAs** (tRNAs) link codons to their respective AAs
-* **small nucleolar RNAs** (snoRNAs)
-* **small nuclear RNA** (snRNA): Regulation of TFs and RNA Poly II
-*
-
 #### How do we study them? ####
 * Sequencing cDNA libraries
 * Next-Gen Sequencing on transcriptome
 * [lncRNA Database](http://www.lncrnadb.org)
+* My fave resource so far: [This CSHL Talk](https://www.youtube.com/watch?v=P3X4ujzRxc4&index=2&list=PLaydtP4O97rPS9arOlBjTgCaYijdi47t5). In it, Jesse Engreitz talks about different methods they used to study the lncRNA **Xist**, including a procedure called **RNA Antisense Purification** (RAP) to map Xist localization.
+  * RAP works with the same logic as [ChIP-seq](https://en.wikipedia.org/wiki/Chromatin_immunoprecipitation), with RNA 'probes' instead of antibodies.
 
-* My fave resource so far: [This CSHL Talk](https://www.youtube.com/watch?v=P3X4ujzRxc4&index=2&list=PLaydtP4O97rPS9arOlBjTgCaYijdi47t5)
+#### Other types of non-coding RNAs (non-inclusive) ####
+  * **MicroRNAs** (miRNAs) complement mRNA strands, preventing translation or tagging them for degredation. (Gene silencing)
+  * **RibosomalRNAs** make up ribosomes (convert mRNAs to proteins)
+  * **TransferRNAs** (tRNAs) link codons to their respective AAs
+  * **small nucleolar RNAs** (snoRNAs)
+  * **small nuclear RNA** (snRNA): Regulation of TFs and RNA Poly II  
